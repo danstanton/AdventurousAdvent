@@ -40,6 +40,6 @@
       (cond
         ((equal choice 1) (start-adventure))
         ((equal choice 2) (load "objects.lisp"))
-				((equal choice 3) (load "commands.lisp"))
+		((equal choice 3) (load "commands.lisp"))
         ((equal choice 4) (return T)))))
 	(format t "Good bye!"))
