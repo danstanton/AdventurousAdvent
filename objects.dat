@@ -1,0 +1,75 @@
+; This file populates the *objects* dictionary.
+("object"
+:desc "It's just a thing."
+)
+
+("container"
+:desc "Anything that can hold something else"
+)
+
+("stone"
+:desc "At some point, this was molten magma."
+)
+
+("life"
+:desc "This reproduces, grows, and changes"
+)
+
+("place"
+:desc "Stuff could happen here. Or maybe not."
+:parents ("container")
+)
+
+("meadow"
+:desc "It's nature-y, like a meadow."
+:adj ("farm")
+:parents ("place")
+)
+
+("farm"
+ :desc "A line of trees and an old farm house show that somebody lived
+ and worked here for some time."
+ :adj ("meadow")
+ :parents ("place")
+)
+
+("plant"
+:desc "It fits in one of the two major divisions of life forms."
+:parents ("life")
+)
+
+("me"
+:desc "You're sick of looking at yourself. That's why you came outside."
+:holder "meadow"
+)
+
+("rock" 
+:desc "black and smoothed by the flow of years at the bottom of a riverbed, 
+this rock has seen all of modern history."
+:parents ("stone")
+:holder "meadow"
+)
+
+("small rock"
+:parents ("rock")
+:desc "about the size of an acorn, but otherwise an ordinary rock."
+:holder "meadow"
+)
+
+("tree"
+:desc "a large, deciduous one is swaying and rustling in the breeze.
+Nearby, you see a farm (try 'go'ing to the farm)."
+:parents ("plant")
+:holder "meadow"
+)
+
+("farm house"
+ :desc "an old red shanty that's in no way luxurious."
+ :holder "farm"
+ :parents ("place")
+)
+
+("bucket"
+ :desc "a rusted bucket with fresh rainwater in it."
+ :holder "farm"
+)
